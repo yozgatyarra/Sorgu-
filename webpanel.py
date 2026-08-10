@@ -18,7 +18,7 @@ from telegram.ext import Application, CommandHandler, CallbackQueryHandler, Mess
 # ═══════════════════════════════════════════════════════════════════════════════
 # CREDENTIALS — BOT TOKENİNİZİ BURAYA YAPIŞTIRIN
 # ═══════════════════════════════════════════════════════════════════════════════
-BOT_TOKEN = "8452524196:AAE077HzD7_g7dluOcOjvXvySF2P-_9JbBI"  # <-- TOKENİNİZİ BURAYA YAPIŞTIRIN
+BOT_TOKEN = "8881173208:AAGZmXMsAcpyxhzyve7PoOtYUEc5bKfFthw"  # <-- TOKENİNİZİ BURAYA YAPIŞTIRIN
 BASE_URL = "http://arastir.vip/api"
 SIGNATURE = "em1rhxnquery"
 VERSION = "v3.0-telegram"
