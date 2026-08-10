@@ -344,3 +344,30 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+    # --- KODLARINIZIN EN ALTI ---
+
+from flask import Flask
+from threading import Thread
+import os
+
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Bot 7/24 Aktif!"
+
+def run():
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host='0.0.0.0', port=port)
+
+def keep_alive():
+    t = Thread(target=run)
+    t.daemon = True
+    t.start()
+
+# 1. Önce Flask web sunucusunu uykudan uyanık tutmak için başlatıyoruz
+keep_alive()
+
+# 2. EN SONA botun dinleme komutunu koyuyoruz (Hangisini kullanıyorsanız):
+bot.infinity_polling()  # veya bot.polling() / app.run_polling()
